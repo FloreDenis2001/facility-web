@@ -55,7 +55,7 @@
     text-decoration: none;
     color: var(--white-to-black);
     font-family: var(--font-style);
-    font-size: var(--normal-font-size);
+    font-size:1.2em;
     font-weight: var(--font-semibold);
     position: relative;
     display: inline-flex;
@@ -69,6 +69,10 @@ header{
 }
 
 
+
+.offcanvas-body ul li {
+  margin-block: 10px;
+}
 
 .nav-link:before {
     position: absolute;
