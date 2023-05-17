@@ -134,6 +134,7 @@ header{
 .head-services{
     font-size: var(--big-font-size);
     margin-bottom: 20px;
+    text-decoration: underline #00648C 3px;
 }
 
 .card{
@@ -180,6 +181,7 @@ aside{
 
 .contact-us h3{
     font-size: 1.4em;
+    /* text-decoration: underline #00648C 3px; */
 }
 
 .list-group-item{
@@ -193,5 +195,58 @@ aside{
 
 .contact{
     padding-block: 50px;
+}
+
+@media screen and (min-width:768px) {
+
+    .all-services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        margin-left: 15px;
+    }
+
+    .contact-methods{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .contact-us h3{
+        font-size: var(--big-font-size);
+    }
+
+    .contact-content{
+        font-size: var(--normal-font-size);
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+
+   
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline:10%;
+}
+
+.nav-link{
+    margin-left: 15px;
+    font-size:1.3em;
+}
+
+.nav-bar{
+    padding: 0px;
+}
+    
 }
 
