@@ -6,8 +6,8 @@
     /* COLORS */
     --black-to-white: #222831;
     --black-to-blue: #222831;
-    --blue-to-black: #00648C;
-    --blue-to-white: #00648C;
+    --blue-to-black: #0b9dd6;
+    --blue-to-white: #0b9dd6;
     --white-to-black: #E8F6EF;
     --white-to-blue: #E8F6EF;
     --black-to-grey:#222831;
@@ -36,11 +36,11 @@
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: var(--black-to-white);
+    background-color: var(--white-to-black);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--blue-to-black);
+    background-color: var(--black-to-blue);
 }
 
 
@@ -67,6 +67,62 @@
 header{
     height: 60px;
 }
+.company-describe{
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    z-index: 1;
+    left: 15%;
+    top: 15%;
+}
+span{
+    color:var(--blue-to-black);
+}
+.why-us,.out-mission{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.out-mission p{
+    margin-top: 20px;
+    margin-inline: 20px;
+}
+.why-us i{
+    color: var(--blue-to-black);
+    font-size: 2.5em;
+    margin-top:30px;
+
+}
+
+.why-us-head{
+    font-size: var(--big-font-size);
+    margin-inline: 10px;
+    /* text-decoration: underline var(--blue-to-white) 20px; */
+    padding-block: 5px;
+    border-block:3px solid var(--blue-to-white) ;
+}
+
+.why h3{
+  font-size: var(--big-font-size);
+  margin-block: 30px;
+}
+
+
+.describe-c,.describe-h{
+    text-align: center;
+    font-size: var(--normal-font-size);
+    color: white;
+}
+
+.describe-h{
+    font-size: var(--medium-font-size);
+    margin-bottom: 20px;
+}
 
 
 
@@ -80,7 +136,7 @@ header{
     width: 110%;
     height: 3px;
     bottom: 5px;
-    background-color: #00648C;
+    background-color: var(--blue-to-black);
     transform: translateX(-150%);
     z-index: -1;
     transition: all 1s;
@@ -92,6 +148,9 @@ header{
     transition: all 1s;
 }
 
+.carousel-item img{
+    min-height:400px;
+}
 
 .dropdown-toggle{
     display: flex;
@@ -107,11 +166,18 @@ header{
 
 .main-entry{
     margin-top: 45px;
+    height: 400px;
 }
+
 
 .carousel-item{
   position:relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
 }
+
 
 .carousel-item::before{
     content: " ";
@@ -120,7 +186,11 @@ header{
     width: 100%;
     height: 100%;
     background-color: #2228318e;
+}
 
+.why-us div{
+    width: 80%;
+    display: grid;
 }
 
 .card{
@@ -129,7 +199,8 @@ header{
 
 .services{
     margin-top: 40px;
-    display:grid;
+    display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -138,7 +209,9 @@ header{
 .head-services{
     font-size: var(--big-font-size);
     margin-bottom: 20px;
-    text-decoration: underline #00648C 3px;
+    width: 95%;
+    padding-block: 5px;
+    border-block:3px solid var(--blue-to-white) ;
 }
 
 .card{
@@ -178,14 +251,18 @@ aside{
 
 .contact-content{
     text-align: center;
-    font-size: 12px;
-    width: 70%;
+    font-size: var(--normal-font-size);
+    width: 80%;
+    margin-top: 20px;
     
 }
 
 .contact-us h3{
-    font-size: 1.4em;
-    /* text-decoration: underline #00648C 3px; */
+    font-size: var(--big-font-size);
+    text-align: center;
+    padding-block: 5px;
+    width: 80%;
+    border-block:3px solid var(--blue-to-white) ;
 }
 
 .list-group-item{
@@ -200,6 +277,57 @@ aside{
 .contact{
     padding-block: 50px;
 }
+
+.custom-card {
+    width: 18rem;
+    border-color: #0b9dd6;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+  
+  .custom-card-title {
+    color: #0b9dd6;
+    font-size: var(--medium-font-size);
+    font-weight: bold;
+    margin-block: 10px;
+  }
+  
+  .custom-list-item {
+    border-color: #0b9dd6;
+  }
+  
+  .custom-card{
+    color: #0b9dd6;
+    font-weight: bold;
+  }
+  
+  .card-text{
+    color: #222831;
+  }
+
+
+
+  .btn{
+    margin: 10px;
+  }
+  .btn-custom {
+    background-color: #0b9dd6;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+
+  .btn-custom:hover:active {
+    background-color: var(--black-to-blue);
+    color: white;
+    transform: scale(90%);
+  }
+
+  .btn-custom:hover {
+    background-color: #0b9dd6;
+    color: #ffffff;
+  }
+
 
 @media screen and (min-width:768px) {
 
