@@ -155,7 +155,22 @@ span {
 }
 
 
+.btn-contact{
+    color: aliceblue; 
+    background-color:#0b9dd6;
+     border:none;
+    border-radius: 5px;
+    height: 45px;
+    padding-inline: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
 
+.btn-contact:active{
+    color: #ffffff;
+    background-color: #222831;
+    transform: scale(90%);
+}
 
 
 .offcanvas-body ul li {
@@ -513,7 +528,6 @@ ul {
 }
 
 .facility-container p {
-    margin-left: 30px;
     max-width: 700px;
 }
 
