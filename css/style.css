@@ -89,8 +89,13 @@ span{
     text-align: center;
 }
 .out-mission p{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-inline: 20px;
+    border-radius: 50px;
+    background-color: #0b9dd6;
+    color: white;
+    padding: 50px 20px;
+    font-size:1.2em;
 }
 .why-us i{
     color: var(--blue-to-black);
@@ -102,7 +107,6 @@ span{
 .why-us-head{
     font-size: var(--big-font-size);
     margin-inline: 10px;
-    /* text-decoration: underline var(--blue-to-white) 20px; */
     padding-block: 5px;
     border-block:3px solid var(--blue-to-white) ;
 }
@@ -115,14 +119,16 @@ span{
 
 .describe-c,.describe-h{
     text-align: center;
-    font-size: var(--normal-font-size);
+    font-size: 1.1em;
     color: white;
 }
 
 .describe-h{
-    font-size: var(--medium-font-size);
+    font-size:1.88em;
     margin-bottom: 20px;
 }
+
+
 
 
 
@@ -149,7 +155,7 @@ span{
 }
 
 .carousel-item img{
-    min-height:400px;
+    min-height:450px;
 }
 
 .dropdown-toggle{
@@ -166,7 +172,7 @@ span{
 
 .main-entry{
     margin-top: 45px;
-    height: 400px;
+    height: 450px;
 }
 
 
@@ -175,11 +181,11 @@ span{
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 450px;
 }
 
 
-.carousel-item::before{
+.carousel-item::before,.carousel-item::after{
     content: " ";
     position: absolute;
     top:0;
@@ -249,6 +255,13 @@ aside{
     
 }
 
+.all-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-content{
     text-align: center;
     font-size: var(--normal-font-size);
@@ -265,42 +278,46 @@ aside{
     border-block:3px solid var(--blue-to-white) ;
 }
 
-.list-group-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.list-group-item i{
-    margin-right: 10px;
-}
+
+
 
 .contact{
     padding-block: 50px;
 }
 
-.custom-card {
-    width: 18rem;
-    border-color: #0b9dd6;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+.method{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.method i{
+    color: #0b9dd6;
+    font-size: var(--big-font-size);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.method-container h4{
+   font-size: 1.4em;
+   font-weight: var(--font-semibold);
+}
+
+.method-container i{
+    font-size: 1em;
+    margin-right: 7px;
+}
+
+  
+  
+p{
+    margin: 5px;
 }
   
-  .custom-card-title {
-    color: #0b9dd6;
-    font-size: var(--medium-font-size);
-    font-weight: bold;
-    margin-block: 10px;
-  }
-  
-  .custom-list-item {
-    border-color: #0b9dd6;
-  }
-  
-  .custom-card{
-    color: #0b9dd6;
-    font-weight: bold;
-  }
+ 
   
   .card-text{
     color: #222831;
@@ -328,6 +345,55 @@ aside{
     color: #ffffff;
   }
 
+  .service-card{
+    margin-left: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-card img{
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card-body{
+    text-align: center;
+    width: 90%;
+  }
+
+  .card-body h3{
+    color: #0b9dd6;
+    font-size: var(--big-font-size);
+    margin-top: 20px;
+  }
+  .list-service-card{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    background-color:#0b9dd6;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+
+  
+
+  ul{
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  .list-service-card li{
+    margin-block: 10px;
+  }
 
 @media screen and (min-width:768px) {
 
