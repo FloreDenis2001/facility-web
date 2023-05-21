@@ -32,6 +32,9 @@
     font-weight: var(--font-semibold);
 }
 
+img{
+    border-radius: 10px;
+}
 /* SCROLL BAR */
 
 ::-webkit-scrollbar {
@@ -288,7 +291,7 @@ main {
     padding-block: 50px;
 }
 
-.contact-us {
+.contact-us,.about-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,7 +310,7 @@ aside {
     justify-content: center;
 }
 
-.contact-content {
+.contact-content,.about-content {
     text-align: center;
     font-size: var(--normal-font-size);
     width: 80%;
@@ -315,7 +318,7 @@ aside {
     max-width: 450px;
 }
 
-.contact-us h3 {
+.contact-us h3 ,.about-us h3{
     font-size: var(--big-font-size);
     text-align: center;
     padding-block: 5px;
@@ -327,7 +330,7 @@ aside {
 
 
 
-.contact {
+.contact,.about{
     padding-block: 50px;
 }
 
@@ -528,6 +531,13 @@ ul {
     margin: 30px;
 }
 
+.container-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .facility-container p , .property-container p , .mentenanta-container p , .curatenie-container p,.gradinarit-container p{
     max-width: 700px;
     margin-bottom: 30px;
@@ -565,7 +575,72 @@ ul {
     margin-bottom: 50px;
 }
 
+.about-img img{
+   width: 300px;
+   height: 200px;
+   margin-top: 20px;
+}
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.about-btn{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.head-about{
+    text-align: center;
+    border-block: 2px solid #0b9dd6;
+    width:40%;
+    margin-inline: 20px;
+}
+
+.about-container{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-describe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    max-width: 450px;
+}
+
 @media screen and (min-width:768px) {
+    .head-about{
+        font-size: var(--big-font-size);
+    }
+
+
+
+
+
+.about-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-img img{
+    margin-left: 20px;
+    height: 300px;
+    width: 400px;
+}
+
     .footer-sections {
         display: flex;
         flex-direction: row;
@@ -638,11 +713,11 @@ ul {
         min-height: 700px;
     }
 
-    .contact-content {
+    .contact-content,.about-content{
         font-size: 1.4em;
     }
 
-    .contact-us h3 {
+    .contact-us h3,.about-us h3  {
         font-size: 2.4em;
     }
 
@@ -668,7 +743,7 @@ ul {
         margin-top: 50px;
     }
 
-    .contact-content {
+    .contact-content ,.about-content {
         margin-top: 50px
     }
 }
@@ -680,6 +755,13 @@ ul {
         height: 300px;
         margin: 20px;
     }
+    .about-con{
+        display: flex;
+    }
+   .about-img{
+    width: 500px;
+    height: 700px;
+   }
 
     .facility-container , .curatenie-types{
         display: flex;
