@@ -511,7 +511,7 @@ ul {
 
 
 
-.facility-container ,.property-container ,.mentenanta-container {
+.facility-container ,.property-container ,.mentenanta-container ,.curatenie-container,.curatenie-types ,.gradinarit-container {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -522,18 +522,18 @@ ul {
     margin-top: 20px;
 }
 
-.facility-container img , .property-container img ,.mentenanta-container img {
+.facility-container img , .property-container img ,.mentenanta-container img , .curatenie-container img,.container-image img,.gradinarit-container img{
     width: 300px;
     height: 200px;
     margin: 30px;
 }
 
-.facility-container p , .property-container p , .mentenanta-container p {
+.facility-container p , .property-container p , .mentenanta-container p , .curatenie-container p,.gradinarit-container p{
     max-width: 700px;
     margin-bottom: 30px;
 }
 
-.facility-main ,.property-main,.mentenanta-main{
+.facility-main ,.property-main,.mentenanta-main,.curatenie-main,.gradinarit-main{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -541,15 +541,28 @@ ul {
     justify-content: center;
 }
 
-.facility-main h3 ,.property-main h3 ,.mentenanta-main h3{
+.facility-main h3 ,.property-main h3 ,.mentenanta-main h3,.curatenie-main h3,.gradinarit-main h3,.type-of-container h3{
     padding: 5px 30px 5px 30px;
     border-block: 2px solid #0b9dd6;
     margin-bottom: 50px;
+    text-align: center;
 }
+
+
 
 .list-of-property li{
   list-style-type:disc;
   text-align: left;
+}
+
+.type-of-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline:10%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width:768px) {
@@ -662,19 +675,29 @@ ul {
 
 @media screen and (min-width:1200px) {
 
-    .facility-container img , .property-container img , .mentenanta-container img {
+    .facility-container img , .property-container img , .mentenanta-container img ,.curatenie-container img,.container-image img{
         width: 400px;
         height: 300px;
         margin: 20px;
     }
 
-    .facility-container {
+    .facility-container , .curatenie-types{
         display: flex;
         flex-direction: row;
         width: 80%;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         text-align: center;
+    }
+
+    .type-of-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        min-height: 800px;
     }
 
     .cont2{
@@ -714,9 +737,7 @@ ul {
         max-height: 850px;
     }
 
-    .service-card-title {
-        color: red;
-    }
+    
 
 
 
